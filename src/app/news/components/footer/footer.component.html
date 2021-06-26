@@ -1,0 +1,160 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="widget-area">
+                    <div class="widget-head">
+                        <img src="assets/images/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="widget-contents">
+                        <ul class="list-unstyled footer-address">
+                            <li>
+                                <span class="icon-envelope-open"></span>administration@fstt.ac.ma
+                            </li>
+                            <li>
+                                <span class="icon-phone"></span> + 212 (0) 5 39 39 39 54 / 55
+                            </li>
+                            <li>
+                                <span class="icon-paper-plane"></span> Tanger Boukhalef
+                            </li>
+                        </ul>
+                        <!-- Ends: .footer-address -->
+                        <ul class="list-unstyled footer-social">
+                            <li>
+                                <a href="">
+                                    <span class="icon-social-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-social-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-social-linkedin"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="icon-social-instagram"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Ends: .footer-social -->
+                    </div>
+                </div>
+            </div>
+            <!-- Ends: .col-md-3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="widget-area latest-post-widget">
+                    <div class="widget-head">
+                        <h2>
+                            <span class="icon-logout"></span> Latest Posts
+                        </h2>
+                    </div>
+                    <div class="widget-contents">
+                        <div class="lp-single" *ngFor="let d of data">
+                            <div class="lp-thumb">
+                                <a href="">
+                                    <img [src]="d.image" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="lp-desc">
+                                <h3>
+                                    <a href="">{{d.title.substr(0,18)}} </a>
+                                </h3>
+                                <span>{{d.date}} </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ends: .widget-contents -->
+                </div>
+            </div>
+            <!-- Ends: .col-md-3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="widget-area links">
+                    <div class="widget-head">
+                        <h2>
+                            <span class="icon-logout"></span> Useful Links
+                        </h2>
+                    </div>
+                    <div class="widget-contents">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">
+                                    <span class="fa fa-angle-right"></span> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="fa fa-angle-right"></span> News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="fa fa-angle-right"></span> News Detection
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span class="fa fa-angle-right"></span> About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span class="fa fa-angle-right"></span> Contact Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <span class="fa fa-angle-right"></span> FAQ's
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Ends: .col-md-3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="widget-area sibscribe-widget">
+                    <div class="widget-head">
+                        <h2>
+                            <span class="icon-logout"></span> Subscribe Us
+                        </h2>
+                    </div>
+                    <div class="widget-contents">
+                        <form action="#">
+                            <div class="form-group">
+                                <div class="input">
+                                    <span>
+                                        <i class="fa fa-envelope-o"></i>
+                                    </span>
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                <div class="mail">
+                                    <span>
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                    <input type="email" placeholder="Type Your Email">
+                                </div>
+                                <button type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Ends: .widget-contents -->
+                </div>
+            </div>
+            <!-- Ends: .col-md-3 -->
+            <div class="col-md-12">
+                <div class="footer-bottom">
+                    <p>&copy; Copyright 2021
+                        <a href="index.html">Arabic Fact</a> | All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

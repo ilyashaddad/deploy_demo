@@ -1,0 +1,50 @@
+<section class="hero-area" id="particles">
+    <div class="hero-area-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Use
+                        <span>AI</span> to improve  your work</h1>
+                    <p>Now you can have both: More time to get things done and happier, more productive employees AI to
+                        Supercharge Your Organization </p>
+                    <form action="#">
+                        <textarea type="text" rows="5" placeholder="تحقق ..."dir="rtl"name="request" [(ngModel)]="request"></textarea>
+                        <button class="check-news"type="submit" (click)="submit()">
+                           تحقق
+                        </button>
+                    </form>
+                    <section class="mt-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                  <table class="table">
+                                      <thead class="thead-dark">
+                                        <tr>
+                                          
+                                          <th scope="col">News</th>
+                                          <th scope="col">validity</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr >
+                                         
+                                          <td>{{data.news}}</td>
+                                          <td>{{data.response}}</td>
+                                        </tr>
+                                       
+                                      </tbody>
+                                    </table>
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends: .hearo-area-content -->
+  </section>
+
+  

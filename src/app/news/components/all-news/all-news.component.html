@@ -1,0 +1,60 @@
+<div class="pages-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="">
+                            <span class="icon-home"></span> Home
+                        </a>
+                    </li>
+                    <li class="active">News </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+ <section class="project-details section-padding" dir="rtl">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="related-projects">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <h2 class="section--title">آخر 
+                                <span>الأخبار</span>
+                            </h2>
+                        </div>
+                        <!-- Ends: .section-title -->
+                        <div class="col-lg-4 col-md-6 mb-2" *ngFor="let d of data">
+                            <div class="project-single">
+                                <figure>
+                                    <img [src]="d.image" alt="" class="img-fluid">
+                                    <figcaption>
+                                        <h3 class="rtl" style="text-align: justify;">{{d.title.length>57? d.title.substr(0,57)+' ...' : d.title }}</h3>
+                                        <p class="rtl "style="text-align: justify;">{{d.resume.length>140? d.resume.substr(0,140)+' ...' : d.resume}} 
+                                        </p>
+                                        <div class="row">
+                                            <a class="col-md-6" [routerLink]="['/news-details',d.id]">اقرأ المزيد
+                                            
+                                        </a>
+                                        <div href="" class=" date-post col-md-6 ">
+                                            <i class="fa fa-clock-o m-2"></i> <span>{{d.date}} </span>
+
+                                        </div> 
+                                        </div>
+                                       
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- Ends: .related-projects -->
+            </div>
+        </div>
+    </div>
+</section>
